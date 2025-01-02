@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background-color: #0a1e27;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+.nav__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: large;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+
+.nav__menu__btn {
+    display: none;
+    cursor: pointer;
+}
+
+.header__container {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.header__content {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.booking {
+    background-color: #ffffff;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.booking h2 {
+    margin-bottom: 1rem;
+}
+
+.booking form {
+    color: 2rem solid #080808;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.booking label {
+    font-size: 1.2rem;
+}
+
+.booking select,
+.booking input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.travel-agents {
+    background-color: #e9c675;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.agents__container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.agent {
+    background-color: #0a1e27;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+.agent img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.about {
+    background-color: #ffffff;
+    padding: 5rem 1rem;
+}
+
+.about__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about__image {
+    margin: 1rem;
+}
+
+.about__content {
+    flex: 1;
+    margin: 1rem;
+}
+
+.about__content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about__content p {
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background-color: #0a1e27;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.footer__links {
+    list-style: none;
+    padding: 5px;
+}
+
+
+.footer__links a:hover {
+    color: #e9c675;
+}
+
+.footer__bar {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+button {
+    background-color: #007BFF; 
+    color: white;
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ecbe52;
+}
+
+@media (max-width: 768px) {
+    .nav__links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav__menu__btn {
+        display: block;
+    }
+
+    .agents__container { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .agent {
+        width: 80%; 
+        margin-bottom: 2rem;
+    }
+
+    .about__container {
+        flex-direction: column;
+    }
+
+    .about__image,
+    .about__content {
+        width: 100%;
+    }
+}
