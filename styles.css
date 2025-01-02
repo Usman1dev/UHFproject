@@ -18,8 +18,9 @@ a {
 .header {
     background-color: #0a1e27;
     color: #ffffff;
-    padding: 2rem 0;
-}
+    padding: 8px 0;
+    height: 320px;
+} 
 
 .nav__bar {
     display: flex;
@@ -50,7 +51,6 @@ a {
     max-width: 800px;
     margin: auto;
 }
-
 
 .booking {
     background-color: #ffffff;
@@ -100,6 +100,7 @@ a {
     border-radius: 8px;
     width: 30%;
     text-align: center;
+    
 }
 
 .agent img {
@@ -117,15 +118,23 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
 
 .about__image {
     margin: 1rem;
-}
 
+}
+#shogran img{
+    width: 800px;
+}
 .about__content {
     flex: 1;
     margin: 1rem;
+}
+#kashmir img{
+    width: 800px;
 }
 
 .about__content h3 {
@@ -152,6 +161,9 @@ a {
 .footer__links {
     list-style: none;
     padding: 5px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 7px;
 }
 
 
@@ -160,9 +172,10 @@ a {
 }
 
 .footer__bar {
-    text-align: center;
+    text-align: bottom;
     padding: 1rem;
     font-size: 0.9rem;
+    margin-top: 80px;
 }
 
 button {
